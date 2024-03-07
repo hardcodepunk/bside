@@ -1,0 +1,23 @@
+html {
+  overflow-y: scroll;
+}
+
+html, body {
+  height: 100%;
+}
+
+ /* ============================================ *
+  * Typography
+  * ============================================ */
+
+body {
+  font-family: futura-pt, sans-serif;
+  background: $gray;
+}
+
+h1, .title-1 { @include title-1; }
+h2, .title-2 { @include title-2; }
+h3, .title-3 { @include title-3; }
+h4, .title-4 { @include title-4; }
+h5, .title-5 { @include title-5; }
+p, .body-regular {@include title-5; }
