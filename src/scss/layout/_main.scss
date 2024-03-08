@@ -87,7 +87,7 @@
       &__item {
         margin-right: 30px;
         letter-spacing: -0.4px;
-        color: $purple--light;
+        color: $yellow; 
         transition: color 0.4s ease-out;
         cursor: pointer;
         &:hover, &.is-active {
@@ -113,7 +113,7 @@
       width: 100%;
       height: 4px;
       margin: -2px 0 0;
-      background: $purple--light;
+      background: $yellow;
       transform-origin: 50%;
       transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
@@ -127,16 +127,16 @@
 }
 
 .splash {
-  background: url("../img/illustration__splash.jpg");
+  background: url(../../../dest/assets/img/splash.png);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 70%;
   &__content {
     padding: 300px 5% 0;
     &__title {
       margin-bottom: 40px;
-      color: $purple--light;
+      color: $yellow;
       &__comma {
         font-size: 48px;
       }
@@ -184,7 +184,7 @@
 
 .footer {
   padding: 60px 0 70px;
-  background: $purple--light;
+  background: $yellow;
   letter-spacing: -0.5px;
   &__address__title {
     font-size: 56px;
@@ -193,7 +193,7 @@
   &__address__subtitle {
     font-size: 40px;
     margin-bottom: 0;
-    color: $gray;
+    color: $green;
     margin-bottom: 50px;
   }
   &__contact {
@@ -206,7 +206,7 @@
     }
     &__subtitle {
       font-size: 24px;
-      color: $gray;
+      color: $green;
     }
     &__note {
       display: flex;
@@ -219,12 +219,12 @@
   }
   &__hours__subtitle {
     font-size: 33px;
-    color: $gray;
+    color: $green;
     margin-bottom: 0;
   }
   &__hours__subtitle-2 {
     font-size: 32px;
-    color: $gray;
+    color: $green;
   }
   .meta {
     text-transform: uppercase;
@@ -253,7 +253,7 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    color: $gray;
+    color: $green;
     &__url {
       color: $purple--dark;
     }
@@ -286,29 +286,14 @@
      height: 20px;
    }
   }
-  &__whatsapp {
-    &:before {
-      width: 20px;
-      background: url("../img/icons/social-icon__whatsapp.svg");
-      background-size: 100%;
-    }
-  }
-  &__linkedin {
-   &:before {
-     width: 22px;
-     margin: -1px 0 0;
-     background: url("../img/icons/social-icon__linkedin.svg");
-     background-size: 100%;
-   }
-  }
-  &__instagram {
+  &__discord{
    &:before {
      width: 20px;
      background: url("../img/icons/social-icon__instagram.svg");
      background-size: 100%;
    }
   }
-  &__youtube {
+  &__twitter {
     &:before {
       width: 28px;
       background: url("../img/icons/social-icon__youtube.svg");
@@ -423,7 +408,7 @@
   display: inline-block;
   cursor: pointer;
   padding: 15px 50px;
-  background: $purple--light;
+  background: $yellow;
   text-transform: uppercase;
   transition: all 0.4s ease-out;
   color: $purple--dark;
@@ -432,18 +417,18 @@
   border-radius: 5px;
   &:hover {
     background: $purple--dark;
-    color: $gray;
+    color: $green;
   }
 }
 
 .footer {
   .cta {
     margin-left: 7px;
-    background: $gray;
+    background: $green;
     color: $purple--dark;
     &:hover {
       background: $purple--dark;
-      color: $gray;
+      color: $green;
     }
   }
 
@@ -503,14 +488,14 @@
 }
 
 .highlight--title {
-  color: $purple--light;
+  color: $yellow;
 }
 
 .highlight--paragraph {
   font-family: din-condensed, sans-serif;
   font-size: 22px;
   text-transform: uppercase;
-  color: $purple--light;
+  color: $yellow;
   line-height: 25px;
   vertical-align: middle;
 }
