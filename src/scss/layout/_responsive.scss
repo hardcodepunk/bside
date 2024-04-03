@@ -53,6 +53,11 @@
 }
 
 @media only screen and (max-width: 1250px) {
+
+
+  .flexblock {
+    flex: 1 0 calc(45%);
+  }
   .footer .row {
     flex-direction: column;
   }

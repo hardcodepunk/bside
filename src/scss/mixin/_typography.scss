@@ -1,19 +1,19 @@
-// =============================================
-// Mixin - Typography
-// =============================================
+@font-face {
+  font-family: 'Hexagonal';
+  src: url('../../../dest/assets/font/hexagonal-webfont.woff2') format('woff2'),
+       url('../../../dest/assets/font/hexagonal-webfont.woff') format('woff');
+}
 
 @mixin title-1 {
-  margin: 0;
-  line-height: 34px;
+  margin: 1em 0 0.4em;
   font-family: din-condensed, sans-serif;
   font-size: 95px;
-  letter-spacing: -1px;
   text-transform: uppercase;
+  letter-spacing: 2px;
   text-rendering: optimizeLegibility;
 }
 
 @mixin title-2 {
-  margin: 0;
   font-family: din-condensed, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
@@ -30,9 +30,8 @@
 }
 
 @mixin title-4 {
-  margin: 0;
-  margin-bottom: 30px;
-  font-family: din-condensed, sans-serif;
+  margin: 0.7em 0 0.2em; 
+  font-family: 'din-condensed', sans-serif;
   font-size: 45px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
