@@ -147,7 +147,7 @@
 }
 
 .splash {
-  background: url(../../../dest/assets/img/splash.png);
+  background: url(../../../assets/img/splash.png);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -323,14 +323,14 @@
   &__discord{
    &:before {
      width: 20px;
-     background: url('../../../dest/assets/img/social-icon__twitter--dark.png');
+     background: url('../../../assets/img/social-icon__twitter--dark.png');
      background-size: 100%;
    }
   }
   &__twitter {
     &:before {
       width: 28px;
-      background: url('../../../dest/assets/img/social-icon__twitter--dark.png');
+      background: url('../../../assets/img/social-icon__twitter--dark.png');
       background-size: 100%;
     }
   }
@@ -339,7 +339,7 @@
 .social-icon__whatsapp {
   &:hover {
     &:before {
-      background: url('../../../dest/assets/img/social-icon__twitter--dark.png');
+      background: url('../../../assets/img/social-icon__twitter--dark.png');
       background-size: 100%;
     }
   }
@@ -348,7 +348,7 @@
 .social-icon__linkedin {
   &:hover {
     &:before {
-      background: url('../../../dest/assets/img/social-icon__twitter--dark.png');
+      background: url('../../../assets/img/social-icon__twitter--dark.png');
       background-size: 100%;
     }
   }
@@ -357,7 +357,7 @@
 .social-icon__instagram {
   &:hover {
     &:before {
-      background: url('../../../dest/assets/img/social-icon__twitter--dark.png');
+      background: url('../../../assets/img/social-icon__twitter--dark.png');
       background-size: 100%;
     }
   }
@@ -366,7 +366,7 @@
 .social-icon__youtube {
   &:hover {
     &:before {
-      background: url('../../../dest/assets/img/social-icon__twitter--dark.png');
+      background: url('../../../assets/img/social-icon__twitter--dark.png');
       background-size: 100%;
     }
   }
@@ -380,7 +380,7 @@
     &__discord {
       &:before {
         width: 40px;
-        background: url('../../../dest/assets/img/social-icon__discord--dark.png');
+        background: url('../../../assets/img/social-icon__discord--dark.png');
         background-size: 100%;
       }
     }
@@ -388,14 +388,14 @@
      &:before {
        width: 40px;
        margin: -1px 0 0;
-       background: url('../../../dest/assets/img/social-icon__twitter--dark.png');
+       background: url('../../../assets/img/social-icon__twitter--dark.png');
        background-size: 100%;
      }
     }
     &__telegram {
      &:before {
        width: 40px;
-       background: url('../../../dest/assets/img/social-icon__telegram--dark.png');
+       background: url('../../../assets/img/social-icon__telegram--dark.png');
        background-size: 100%;
      }
     }
