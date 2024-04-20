@@ -103,10 +103,10 @@
         margin-right: 30px;
         letter-spacing: -0.4px;
         color: $yellow; 
-        transition: color 0.4s ease-out;
+        transition: all 0.4s ease-out;
         cursor: pointer;
         &:hover, &.is-active {
-          color: $purple--dark;
+          filter: brightness(1.40);
         }
       }
     }
@@ -169,6 +169,14 @@
   }
 }
 
+.shop .splash {
+  background: url(./../../assets/img/splash__shop.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 70%;
+}
+
 .splash::before {
   content: '';
   position: absolute;
@@ -212,10 +220,18 @@
   padding-bottom: 140px;
   &__profile {
     min-width: 0;
-    img {
-      max-width: 220px;
+    a {
+      margin: 120px 0;
+      transition: all 0.4s ease-out;
+      img {
+        max-width: 220px;
+      }
     }
   }
+}
+
+.partners__profile a:hover {
+  filter: brightness(1.40);
 }
 
 .partners::before {
@@ -338,20 +354,16 @@
 .footer::before {
   content: '';
   position: absolute;
-  top: -45%;
+  top: -25%;
   right: 10%;
-  background: url('./../../assets/img/illustration__comb-4.png');
-  height: 600px;
-  width: 600px;
+  background: url(./../../assets/img/illustration__comb-4.png);
+  height: 400px;
+  width: 400px;
   z-index: 1000;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
+  background-position: center;
 } 
-
-#map {
-  height: 400px;
-  width: 550px;;
-}
 
 /*
  * styling
