@@ -316,7 +316,7 @@
   position: relative;
   &__address__title {
     font-size: 40px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   &__address__subtitle {
     font-size: 19px;
@@ -437,6 +437,13 @@
       background-size: 100%;
     }
   }
+  &__zealy {
+    &:before {
+      width: 28px;
+      background: url('./../../assets/img/social-icon__twitter--dark.png');
+      background-size: 100%;
+    }
+  }
 }
 
 .social-icon__whatsapp {
@@ -508,6 +515,25 @@
         margin-left: 4px;
         width: 27px;
         background: url('./../../assets/img/social-icon__out.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+     }
+     &__zealy {
+      &:before {
+        width: 27px;
+        background: url('./../../assets/img/social-icon__zealy.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+     }
+     &__subber {
+      &:before {
+        margin-left: -4px;
+        width: 14px;
+        background: url('./../../assets/img/social-icon__subber.svg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
