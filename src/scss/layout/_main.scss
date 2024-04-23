@@ -118,7 +118,7 @@
   }
   .nav__toggle {
     position: absolute;
-    left: 30px;
+    right: 30px;
     top: 42px;
     width: 30px;
     height: 30px;
@@ -177,41 +177,77 @@
   background-size: auto 70%;
 }
 
+.app .splash, .shop .splash {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img { 
+    width: 400px;
+    max-width: 50%;
+  }
+}
+
 .splash::before {
   content: '';
   position: absolute;
-  top: -5%;
-  right: -5%;
+  top: 0;
+  right: 4%;
   background: url('./../../assets/img/illustration__comb-2.png');
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   z-index: 1000;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
+  background-position: center;
 }
 
 .splash::after {
   content: '';
   position: absolute;
-  bottom: -35%;
-  left: 0;
+  bottom: -20%;
+  left: 10%;
   background: url('./../../assets/img/illustration__comb-1.png');
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   z-index: 1000;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
+  background-position: center;
 }
-
+.mobile-logo {
+  display: none;
+}
 .introduction {
   text-align: center;
+  padding-bottom: 0; 
 }
 
 .team {
+  justify-content: space-around;
+  padding-bottom: 200px;
   &__profile {
     min-width: 0;
+    margin-bottom: 40px;
     img {
       max-width: 220px;
+      padding: 5px;
+    }
+    h5 {
+      margin-bottom: 0;
+    }
+    &__socials {
+      display: flex;
+      gap: 10px;
+      img {
+        height: 40px;
+      }
+    }
+    &__portfolio {
+      margin: 0 0 20px;
+      font-size: 14px;
+      text-transform: uppercase;
     }
   }
 }
@@ -237,14 +273,15 @@
 .partners::before {
   content: '';
   position: absolute;
-  top: -45%;
-  right: -5%;
+  top: -25%;
+  right: 5%;
   background: url('./../../assets/img/illustration__comb-3.png');
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   z-index: 1000;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 150%;
+  background-position: center;
 }
 
 .who, .what { 
@@ -278,11 +315,11 @@
   letter-spacing: -0.5px;
   position: relative;
   &__address__title {
-    font-size: 56px;
+    font-size: 40px;
     margin-bottom: 0;
   }
   &__address__subtitle {
-    font-size: 40px;
+    font-size: 19px;
     margin-bottom: 0;
     color: $green;
     margin-bottom: 50px;
@@ -440,6 +477,7 @@
 
 .footer {
   .social-icon {
+    display: flex;
     &:first-child {
      margin-left: 0;
     }
@@ -465,6 +503,16 @@
        background-size: 100%;
      }
     }
+    &__out {
+      &:before {
+        margin-left: 4px;
+        width: 27px;
+        background: url('./../../assets/img/social-icon__out.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+     }
   }
   // .social-icon__whatsapp {
   //   &:hover {

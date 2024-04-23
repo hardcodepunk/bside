@@ -5,9 +5,9 @@
 }
 
 @mixin title-1 {
-  margin: 1em 0 0.4em;
+  margin: 0.7em 0 0.2em;
   font-family: din-condensed, sans-serif;
-  font-size: 95px;
+  font-size: 72px;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-rendering: optimizeLegibility;
@@ -22,17 +22,17 @@
 
 @mixin title-3 {
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   font-family: din-condensed, sans-serif;
-  font-size: 70px;
+  font-size: 40px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
 
 @mixin title-4 {
-  margin: 0.7em 0 0.2em; 
+  margin: 0.4em 0 0.2em; 
   font-family: 'din-condensed', sans-serif;
-  font-size: 45px;
+  font-size: 27px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
