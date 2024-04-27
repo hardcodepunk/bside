@@ -10,6 +10,11 @@
   display: flex;
 }
 
+.paragraph {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .wrapper {
   padding: 0 5%;
   max-width: 1450px;
@@ -103,7 +108,7 @@
         margin-right: 30px;
         letter-spacing: -0.4px;
         color: $yellow; 
-        transition: all 0.4s ease-out;
+        transition: filter 0.4s ease-out;
         cursor: pointer;
         &:hover, &.is-active {
           filter: brightness(1.40);
@@ -177,7 +182,7 @@
   background-size: auto 70%;
 }
 
-.app .splash, .shop .splash {
+.app .splash, .shop .splash, .editions .splash {
   background: none;
   display: flex;
   flex-direction: column;
@@ -206,8 +211,8 @@
 .splash::after {
   content: '';
   position: absolute;
-  bottom: -20%;
-  left: 10%;
+  bottom: -42%;
+  left: 5%;
   background: url('./../../assets/img/illustration__comb-1.png');
   height: 400px;
   width: 400px;
@@ -314,46 +319,6 @@
   background: $yellow;
   letter-spacing: -0.5px;
   position: relative;
-  &__address__title {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-  &__address__subtitle {
-    font-size: 19px;
-    margin-bottom: 0;
-    color: $green;
-    margin-bottom: 50px;
-  }
-  &__contact {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    &__title {
-      font-size: 53px;
-      margin-bottom: 0;
-    }
-    &__subtitle {
-      font-size: 24px;
-      color: $green;
-    }
-    &__note {
-      display: flex;
-      margin-bottom: 40px;
-    }
-  }
-  &__hours__title {
-    font-size: 53px;
-    margin-bottom: 0;
-  }
-  &__hours__subtitle {
-    font-size: 33px;
-    color: $green;
-    margin-bottom: 0;
-  }
-  &__hours__subtitle-2 {
-    font-size: 32px;
-    color: $green;
-  }
   .meta {
     text-transform: uppercase;
     justify-content: space-between;
@@ -588,6 +553,39 @@
   color: $yellow;
 }
 
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $yellow;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  transition: filter 0.4s ease-out;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  filter: brightness(1.40);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .section--light {
   background: $yellow;
   color: $green;
@@ -605,6 +603,7 @@
   font-family: din-condensed, sans-serif;
   font-size: 24px;
   margin-bottom: 70px;
+  place-self: flex-start;
   &__item {
     margin-right: 70px;
     padding-left: 40px;
