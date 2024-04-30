@@ -98,10 +98,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  bottom: 0;
   height: 85px;
   width: 100%;
   padding: 0 60px;
   z-index: 9000;
+  background: $green;
   .nav {
     .list {
       &__item {
@@ -119,7 +121,7 @@
   .nav__logo {
     height: 50px;
     margin-right: 50px;
-    filter: invert(93%) sepia(33%) saturate(851%) hue-rotate(319deg) brightness(105%) contrast(98%);
+    filter: invert(82%) sepia(55%) saturate(308%) hue-rotate(356deg) brightness(102%) contrast(98%);
   }
   .nav__toggle {
     position: absolute;
@@ -152,20 +154,21 @@
 }
 
 .slider {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   display: flex;
+  gap: 20px;
   flex-wrap: nowrap;
   scroll-behavior: smooth; /* For smooth scrolling */
 }
 
 .slider img {
-  height: 100vh;
+  height: calc(100vh - 85px);
 }
 
 .splash {
-  height: 100vh;
   width: 100vw;
+  padding-bottom: 85px;
 }
 
 .shop .splash {
@@ -188,39 +191,31 @@
   }
 }
 
-.splash::before {
+.header::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 4%;
   right: 4%;
   background: url('./../../assets/img/illustration__comb-2.png');
   height: 400px;
   width: 400px;
-  z-index: 1000;
   background-repeat: no-repeat;
   background-size: 150%;
   background-position: center;
+  pointer-events: none;
+  user-select: none;
 }
 
-.splash::after {
-  content: '';
-  position: absolute;
-  bottom: -42%;
-  left: 5%;
-  background: url('./../../assets/img/illustration__comb-1.png');
+.introduction__illustration {
   height: 400px;
-  width: 400px;
-  z-index: 1000;
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: center;
 }
+
 .mobile-logo {
   display: none;
 }
+
 .introduction {
-  text-align: center;
-  padding-bottom: 0; 
+  margin: 100px 0 70px;
 }
 
 .team {
@@ -272,8 +267,8 @@
 .partners::before {
   content: '';
   position: absolute;
-  top: -25%;
-  right: 5%;
+  top: -45%;
+  left: 5%;
   background: url('./../../assets/img/illustration__comb-3.png');
   height: 400px;
   width: 400px;
@@ -499,38 +494,6 @@
       }
      }
   }
-  // .social-icon__whatsapp {
-  //   &:hover {
-  //     &:before {
-  //      background: url("../img/icons/social-icon__whatsapp--dark.svg");
-  //      background-size: 100%;
-  //     }
-  //   }
-  // }
-  // .social-icon__linkedin {
-  //   &:hover {
-  //     &:before {
-  //      background: url("../img/icons/social-icon__linkedin--dark.svg");
-  //      background-size: 100%;
-  //     }
-  //   }
-  // }
-  // .social-icon__instagram {
-  //   &:hover {
-  //     &:before {
-  //      background: url("../img/icons/social-icon__instagram--dark.svg");
-  //      background-size: 100%;
-  //     }
-  //   }
-  // }
-  // .social-icon__youtube {
-  //   &:hover {
-  //     &:before {
-  //      background: url("../img/icons/social-icon__youtube--dark.svg");
-  //      background-size: 100%;
-  //     }
-  //   }
-  // }
 }
 
  .cta {

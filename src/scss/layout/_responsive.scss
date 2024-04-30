@@ -72,9 +72,6 @@
       display: none;
     }
   }
-  .illustration--hide-on-mobile {
-    display: none;
-  }
   .footer__credit {
     padding: 100px 0 0;
   }
@@ -98,6 +95,14 @@
 }
 
 @media only screen and (max-width: 1050px) {
+  .illustration--hide-on-mobile {
+    display: none;
+  }
+  .header::before {
+    right: auto;
+    left: 4%;
+    top: 30%;
+  } 
   .flexblock {
     flex: 1 0 calc(45%);
   }
@@ -189,5 +194,16 @@
   }
   .partners {
     padding-bottom: 140px;
+  }
+  .header::before {
+    top: 100%;
+    width: 250px;
+    height: 250px;
+  }
+  .footer::before {
+    top: -40%;
+    right: 0%;
+    height: 200px;
+    width: 200px;
   }
 }
