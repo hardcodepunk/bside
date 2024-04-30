@@ -1,4 +1,3 @@
-var navItem = document.querySelectorAll('.js-nav-item');
 var body = document.getElementById('body');
 
 // open mobile menu when clicking on mobile nav icon
@@ -6,24 +5,24 @@ document.getElementById('js-toggle-mobile-nav').onclick = function() {
   body.classList.toggle('open-menu');
 }
 
-for (var i = 0; i < navItem.length; i++) {
-  navItem[i].addEventListener('click', function(event) {
+// Get the slider element
+const slider = document.querySelector('.slider');
 
-    if (body.classList.contains('open-menu')) {
-      body.classList.remove('open-menu');
+// Clone the first slide and append it to the end
+const firstSlideClone = slider.firstElementChild.cloneNode(true);
+slider.appendChild(firstSlideClone);
+
+// Function to loop the slider
+function loopSlider() {
+    // Move to the next slide with smooth scrolling
+    slider.scrollLeft += slider.firstElementChild.offsetWidth;
+    
+    // If reached the last slide, scroll back to the first slide
+    if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
     }
+}
 
-    //get href of nav element and scroll to its section
-    var idDestination = this.getAttribute("href").substring(1, this.length);
-    var destination = document.getElementById(idDestination);
-    destination.scrollIntoView({behavior: "smooth"});
+// Set interval to loop the slider every 4 seconds
+setInterval(loopSlider, 4000);
 
-    event.preventDefault();
-  })
-};
-
-// keeptrack
-document.addEventListener("DOMContentLoaded", function() {
-  var header = document.getElementById('header');
-  var waypointInit = new KeepTrack(header);
-});

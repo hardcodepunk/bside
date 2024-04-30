@@ -40,6 +40,7 @@
     "postcss": "^8.3.0",
     "sass": "^1.56.1",
     "sshpk": "^1.16.1",
+    "tiny-slider": "^2.9.4",
     "tough-cookie": "^2.5.0",
     "upgrade": "^1.1.0"
   }
