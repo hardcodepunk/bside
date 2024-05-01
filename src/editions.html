@@ -25,7 +25,7 @@
       content="5000 unique bees NFT collection buzzing your digital identity powered by Injective."
     />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/styles.css?v5" />
+    <link rel="stylesheet" href="assets/css/styles.css?v10" />
     <link rel="stylesheet" href="https://use.typekit.net/ldl7lwm.css" />
   </head>
   <body id="body" class="body editions">
@@ -37,18 +37,33 @@
       </div>
       <nav class="nav nav--center-on-mobile">
         <ul class="list list--horizontal">
+          <!-- <li class="list__item">
+            <div class="dropdown">
+              <div class="dropbtn"><h2>Collections</h2></div>
+              <div class="dropdown-content">
+                <a href="/editions">
+                  <h2>Editions</h2>
+                </a>
+              </div>
+            </div>
+          </li> -->
+          <li class="list__item is-active">
+            <a href="/editions">
+              <h2>Editions</h2>
+            </a>
+          </li>
           <li class="list__item">
-            <a class="js-nav-item" href="https://bombolabs.gitbook.io/b-side-litepaper">
+            <a href="https://bombolabs.gitbook.io/b-side-litepaper">
               <h2>Whitepaper</h2>
             </a>
           </li>
           <li class="list__item">
-            <a class="js-nav-item" href="/application">
+            <a href="/app">
               <h2>App</h2>
             </a>
           </li>
           <li class="list__item">
-            <a class="js-nav-item" href="/shop">
+            <a href="/shop">
               <h2>Shop</h2>
             </a>
           </li>
@@ -64,7 +79,57 @@
       </a>
     </header>
 
-    <section class="splash"></section>
+    <section class="section editions section--light">
+      <div class="wrapper">
+        <div class="flexblock">
+          <div class="textbody">
+            <h1>Editions</h1>
+            <p class="paragraph">
+              BS Editions is a collection of exclusive B Side themed illustrations minted on Exchange.<br>
+              <span class="paragraph__sub">*Now public, Editions mint will be in the future accessible ONLY to B Side NFT holders.</span>
+            </p>
+            <p class="paragraph">
+              DROP: every Thursday<br>
+              SUPPLY: 10 pieces per drop<br>
+              PRICE: FREE MINT<br>
+            </p>
+            <p class="paragraph">
+              Benefits to BS Editions holders:
+              <ul class="paragraph__list">
+                <li class="paragraph__list__item">B Side NFT OG whitelist</li> 
+                <li class="paragraph__list__item">Eligibility as collector for the upcoming Exchange $ART airdrop.</li>
+                <li class="paragraph__list__item">BS Editions raffle ticket.</li>
+              </ul>
+            </p>
+            <p class="paragraph">
+              Benefits to B Side NFT holders:
+              <ul class="paragraph__list"> 
+                <li class="paragraph__list__item">All fees from secondary market editions will be allocated to the future BitHoney ($BTH) airdrop pool.</li>
+              </ul>
+            </p>
+          </div>
+          <a class="section__url" href="https://exchange.art/series/B%20Side%20Editions/nfts"
+            ><img src="assets/img/logo__exchange-art.png"
+          /></a>
+        </div>
+      </div>
+      <div class="wrapper">
+        <a
+          href="https://exchange.art/editions/4cn75AYmA1G2bP5asdndeBxeqmQuxCeqywQSusy2kA6o"
+          class="flexblock editions__item editions__item--released"
+        >
+          <img src="assets/img/edition-1.png" />
+          <h4>420 cloudmaker</h4>
+          <h5>Sold out / 10</h5>
+          <div class="editions__item__socials">
+            <img src="assets/img/social-icon__url.svg" />
+          </div>
+        </a>
+        <div class="flexblock editions__item  editions__item--not-released"></div>
+        <div class="flexblock editions__item  editions__item--not-released"></div>
+        <div class="flexblock editions__item  editions__item--not-released"></div>
+      </div>
+    </section>
 
     <footer id="contact" class="footer section--light">
       <div class="wrapper">

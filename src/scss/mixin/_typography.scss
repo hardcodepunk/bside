@@ -1,21 +1,27 @@
 @font-face {
   font-family: 'Hexagonal';
-  src: url('../../../dest/assets/font/hexagonal-webfont.woff2') format('woff2'),
-       url('../../../dest/assets/font/hexagonal-webfont.woff') format('woff');
+  src: url('./../../assets/font/hexagonal-webfont.woff2') format('woff2'),
+       url('./../../assets/font/hexagonal-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'futura-medium-bt';
+  src: url('./../../assets/font/futura_medium_bt.woff2') format('woff2'),
+       url('./../../assets/font/futura_medium_bt.woff') format('woff');
 }
 
 @mixin title-1 {
-  margin: 0.7em 0 0.4em;
-  font-family: din-condensed, sans-serif;
-  font-size: 55px;
+  margin: 1.2em 0 0.7em;
+  font-family: futura-medium-bt, sans-serif;
+  font-size: 45px;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-rendering: optimizeLegibility;
 }
 
 @mixin title-2 {
-  font-family: din-condensed, sans-serif;
-  font-size: 24px;
+  font-family: futura-medium-bt, sans-serif;
+  font-size: 18px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
@@ -23,7 +29,7 @@
 @mixin title-3 {
   margin: 0;
   margin-bottom: 40px;
-  font-family: din-condensed, sans-serif;
+  font-family: futura-medium-bt, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
@@ -31,8 +37,8 @@
 
 @mixin title-4 {
   margin: 0.4em 0 0.2em; 
-  font-family: 'din-condensed', sans-serif;
-  font-size: 27px;
+  font-family: 'futura-medium-bt', sans-serif;
+  font-size: 22px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
@@ -40,10 +46,10 @@
 @mixin title-5 {
   margin: 0;
   margin-bottom: 35px;
-  font-family: futura-pt, sans-serif;
+  font-family: 'futura-medium-bt', sans-serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.5px;
   line-height: 27px;
+  font-size: 14px;
   text-rendering: optimizeLegibility;
 }
