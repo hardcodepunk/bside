@@ -189,7 +189,8 @@
     padding-bottom: 140px;
   }
   .header::before {
-    top: 100%;
+    top: 475%;
+    left: -2%;
     width: 250px;
     height: 250px;
   }
@@ -202,5 +203,21 @@
   h1, .title-1 {
     font-size: 24px;
     margin: 2em 0 1.7em;
+  }
+  .textbody {
+    margin: 0 auto 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer__credit {
+    padding: 70px 0 0;
+    font-size: 9px;
+  }
+  .team__item img, .editions__item img {
+    max-width: 150px;
+  }
+  .footer::before {
+    top: -50%;
   }
 }
