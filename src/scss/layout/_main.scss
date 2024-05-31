@@ -103,7 +103,8 @@
   .nav {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+      opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
 }
 
@@ -127,11 +128,12 @@
       &__item {
         margin-right: 30px;
         letter-spacing: -0.4px;
-        color: $yellow; 
+        color: $yellow;
         transition: filter 0.4s ease-out;
         cursor: pointer;
-        &:hover, &.is-active {
-          filter: brightness(1.40);
+        &:hover,
+        &.is-active {
+          filter: brightness(1.4);
         }
         &.is-unavailable {
           color: gray;
@@ -144,7 +146,8 @@
   .nav__logo {
     height: 50px;
     margin-right: 50px;
-    filter: invert(82%) sepia(55%) saturate(308%) hue-rotate(356deg) brightness(102%) contrast(98%);
+    filter: invert(82%) sepia(55%) saturate(308%) hue-rotate(356deg)
+      brightness(102%) contrast(98%);
   }
   .nav__toggle {
     position: absolute;
@@ -155,7 +158,9 @@
     display: none;
     z-index: 9001;
     cursor: pointer;
-    .top, .middle, .bottom {
+    .top,
+    .middle,
+    .bottom {
       display: block;
       position: absolute;
       left: 0;
@@ -204,7 +209,9 @@
   background-size: auto 70%;
 }
 
-.app .splash, .shop .splash, .editions .splash {
+.app .splash,
+.shop .splash,
+.editions .splash {
   background: none;
   display: flex;
   flex-direction: column;
@@ -212,24 +219,26 @@
   align-items: center;
   height: calc(100vh - 85px);
   margin-top: 85px;
-  img { 
+  img {
     width: 400px;
     max-width: 50%;
   }
 }
 
-.app .header, .shop .header, .editions .header {
+.app .header,
+.shop .header,
+.editions .header {
   background: none;
   bottom: auto;
   top: 0;
 }
 
 .header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 320%;
   right: 4%;
-  background: url('./../../assets/img/illustration__comb-2.png');
+  background: url("./../../assets/img/illustration__comb-2.png");
   height: 400px;
   width: 400px;
   background-repeat: no-repeat;
@@ -239,7 +248,9 @@
   user-select: none;
 }
 
-.app .header::before, .shop .header::before, .editions .header::before {
+.app .header::before,
+.shop .header::before,
+.editions .header::before {
   display: none;
 }
 
@@ -255,7 +266,8 @@
   margin: 100px 0 70px;
 }
 
-.team, .editions {
+.team,
+.editions {
   justify-content: space-around;
   padding-bottom: 200px;
   &__item {
@@ -299,7 +311,7 @@
   }
 }
 
-.partners { 
+.partners {
   padding-bottom: 140px;
   &__item {
     min-width: 0;
@@ -314,24 +326,26 @@
 }
 
 .partners__item a:hover {
-  filter: brightness(1.40);
+  filter: brightness(1.4);
 }
 
 .partners::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -45%;
   left: 5%;
-  background: url('./../../assets/img/illustration__comb-3.png');
+  background: url("./../../assets/img/illustration__comb-3.png");
   height: 400px;
   width: 400px;
   z-index: 1000;
   background-repeat: no-repeat;
   background-size: 150%;
   background-position: center;
+  pointer-events: none;
 }
 
-.who, .what { 
+.who,
+.what {
   position: relative;
   &__illustration {
     position: absolute;
@@ -378,8 +392,8 @@
     }
   }
   .row {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
   &__credit {
     padding: 200px 0 0;
@@ -396,7 +410,7 @@
 }
 
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -25%;
   right: 10%;
@@ -409,7 +423,7 @@
   background-position: center;
   pointer-events: none;
   user-select: none;
-} 
+}
 
 /*
  * styling
@@ -424,32 +438,32 @@
   position: relative;
   margin-left: 25px;
   &__img {
-   &:before {
-     position: absolute;
-     left: 0;
-     top: -1px;
-     content: "";
-     height: 32px;
-   }
+    &:before {
+      position: absolute;
+      left: 0;
+      top: -1px;
+      content: "";
+      height: 32px;
+    }
   }
-  &__discord{
-   &:before {
-     width: 20px;
-     background: url('./../../assets/img/social-icon__twitter--dark.png');
-     background-size: 100%;
-   }
+  &__discord {
+    &:before {
+      width: 20px;
+      background: url("./../../assets/img/social-icon__twitter--dark.png");
+      background-size: 100%;
+    }
   }
   &__twitter {
     &:before {
       width: 28px;
-      background: url('./../../assets/img/social-icon__twitter--dark.png');
+      background: url("./../../assets/img/social-icon__twitter--dark.png");
       background-size: 100%;
     }
   }
   &__zealy {
     &:before {
       width: 28px;
-      background: url('./../../assets/img/social-icon__twitter--dark.png');
+      background: url("./../../assets/img/social-icon__twitter--dark.png");
       background-size: 100%;
     }
   }
@@ -458,7 +472,7 @@
 .social-icon__whatsapp {
   &:hover {
     &:before {
-      background: url('./../../assets/img/social-icon__twitter--dark.png');
+      background: url("./../../assets/img/social-icon__twitter--dark.png");
       background-size: 100%;
     }
   }
@@ -467,7 +481,7 @@
 .social-icon__linkedin {
   &:hover {
     &:before {
-      background: url('./../../assets/img/social-icon__twitter--dark.png');
+      background: url("./../../assets/img/social-icon__twitter--dark.png");
       background-size: 100%;
     }
   }
@@ -476,7 +490,7 @@
 .social-icon__instagram {
   &:hover {
     &:before {
-      background: url('./../../assets/img/social-icon__twitter--dark.png');
+      background: url("./../../assets/img/social-icon__twitter--dark.png");
       background-size: 100%;
     }
   }
@@ -485,7 +499,7 @@
 .social-icon__youtube {
   &:hover {
     &:before {
-      background: url('./../../assets/img/social-icon__twitter--dark.png');
+      background: url("./../../assets/img/social-icon__twitter--dark.png");
       background-size: 100%;
     }
   }
@@ -495,63 +509,63 @@
   .social-icon {
     display: flex;
     &:first-child {
-     margin-left: 0;
+      margin-left: 0;
     }
     &__discord {
       &:before {
         width: 40px;
-        background: url('./../../assets/img/social-icon__discord--dark.png');
+        background: url("./../../assets/img/social-icon__discord--dark.png");
         background-size: 100%;
       }
     }
     &__twitter {
-     &:before {
-       width: 40px;
-       margin: -1px 0 0;
-       background: url('./../../assets/img/social-icon__twitter--dark.png');
-       background-size: 100%;
-     }
+      &:before {
+        width: 40px;
+        margin: -1px 0 0;
+        background: url("./../../assets/img/social-icon__twitter--dark.png");
+        background-size: 100%;
+      }
     }
     &__telegram {
-     &:before {
-       width: 40px;
-       background: url('./../../assets/img/social-icon__telegram--dark.png');
-       background-size: 100%;
-     }
+      &:before {
+        width: 40px;
+        background: url("./../../assets/img/social-icon__telegram--dark.png");
+        background-size: 100%;
+      }
     }
     &__out {
       &:before {
         margin-left: 4px;
         width: 27px;
-        background: url('./../../assets/img/social-icon__out.svg');
+        background: url("./../../assets/img/social-icon__out.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
       }
-     }
-     &__zealy {
+    }
+    &__zealy {
       &:before {
         width: 27px;
-        background: url('./../../assets/img/social-icon__zealy.svg');
+        background: url("./../../assets/img/social-icon__zealy.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
       }
-     }
-     &__subber {
+    }
+    &__subber {
       &:before {
         margin-left: -4px;
         width: 14px;
-        background: url('./../../assets/img/social-icon__subber.svg');
+        background: url("./../../assets/img/social-icon__subber.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
       }
-     }
+    }
   }
 }
 
- .cta {
+.cta {
   display: inline-block;
   cursor: pointer;
   padding: 15px 50px;
@@ -591,7 +605,7 @@
 }
 
 .dropdown-content a:hover {
-  filter: brightness(1.40);
+  filter: brightness(1.4);
 }
 
 .dropdown:hover .dropdown-content {
@@ -648,7 +662,6 @@
     }
   }
 }
-
 
 .textblock {
   margin-bottom: 70px;
