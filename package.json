@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "lint": "eslint src/js/*.js",
-    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '&gt; 5%, ie 9' -r dest/assets/css/*",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 9' -r dest/assets/css/*",
     "build:html": "cp src/*.html dest/",
     "build:js": "cp src/js/* dest/assets/js/script.js",
     "build:css": "node-sass --output-style compressed src/scss/styles.scss -o dest/assets/css/ && npm run autoprefixer",
@@ -15,7 +15,8 @@
     "watch:css": "onchange 'src/**/*.scss' -- run-s build:css",
     "watch:html": "onchange 'src/**/*.html' -- run-s build:html",
     "watch": "npm run watch:html & npm run watch:js & npm run watch:css",
-    "start": "npm run build && npm run watch"
+    "serve": "lite-server",
+    "start": "npm run build && npm run watch & npm run serve"
   },
   "author": "Frieder Jan Moerman @hardcodepunk",
   "license": "MIT",
@@ -23,6 +24,7 @@
     "autoprefixer": "^7.2.6",
     "browserify": "^14.5.0",
     "eslint": "^4.19.1",
+    "lite-server": "^2.5.4",
     "npm": "^6.13.4",
     "npm-run-all": "^4.1.5",
     "onchange": "^6.0.0",
